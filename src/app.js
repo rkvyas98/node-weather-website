@@ -30,7 +30,7 @@ app.get('', (req, res)=>{
 app.get('/about', (req, res)=>{
     res.render('about',{
         title:'About Me',
-        img: '/img/robot.png',
+        img: '/img/rv.jpg',
         name: 'Rakshit Vyas'
     })
 })

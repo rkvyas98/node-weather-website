@@ -9,7 +9,7 @@ const forecast = (longitute, latitude, callback) => {
         } else if(body.error){
                 callback(body.error.info, undefined);
         } else{
-                callback(undefined,body.current.weather_descriptions[0] +'. It is currently '+body.current.temperature + ' degress out. It feels like '+ body.current.feelslike + ' degress out.');
+                callback(undefined,body.current.weather_descriptions[0] +'. It is currently '+body.current.temperature + ' degress out. It feels like '+ body.current.feelslike + ' degress out. Humiduty out there is ' + body.current.humidity + '%.');
         }
     })
 }
